@@ -31,7 +31,7 @@ parent.style.pointerEvents = "auto"
 parent.style.width = '500px;'
 parent.style.zIndex = "999"
 parent.style.position = "fixed"
-parent.style.top = '10%'
+parent.style.top = '15%'
 parent.style.backgroundColor = "rgba(204, 204, 255, 0.7)"
 parent.style.padding = "20px"
 
@@ -49,7 +49,7 @@ options.innerHTML = `<style>
                                 font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;
                                 text-align: center;
                                 line-height: 1em;
-                                margin: auto;
+                                margin: 10px 10px 10px 10px;
                             }
                             .timerbutton {
                                 display: inline-block;
@@ -69,19 +69,21 @@ options.innerHTML = `<style>
                             input {
                                 display: inline-block;
                                 margin: 0;
+                                text-align: center;
                                 padding: 1px 6px;
+                                height: 3rem;
                                 border: 1px solid #ccc;
-                                border-radius: 4px;
+                                border-radius: 1rem;
                                 box-sizing: border-box;
                                 font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;
-                                font-size: 1rem;
+                                font-size: 14px;
                                 line-height: 1.15;
                                 width: 50%
                                 
                             }
                      </style>
 <h1 class="timertitle" >Do you really need to be here?</h1>
-<input id="superinput" value="new countdown value?"/>
+<input id="superinput" value="new countdown"/>
 <button class="timerbutton" id="superinputbutton">set new countdown value</button>
 <button class="timerbutton" id="superbutton">whitelist this url</button>
 `
@@ -90,6 +92,7 @@ const timer = document.createElement("div")
 timer.style.textAlign = "center"
 timer.style.color = "rgba(255, 94, 0, 0.85)";
 timer.style.fontSize = "2.25rem"
+timer.style.fontFamily = "Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;"
 
 //appending our created elements
 parent.appendChild(timer)

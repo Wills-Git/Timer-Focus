@@ -1,0 +1,19 @@
+{
+    "name": "Timer Focus ",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Browser timer",
+    "permissions": ["webRequest", "alarms", "webNavigation"],
+    "action": {
+        "default_popup" : "hello.html"
+    },
+    "content_scripts" :  [
+        {
+            "js": ["plugin.js"],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+    
+  }
